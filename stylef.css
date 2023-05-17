@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+   
+    font-size: 1.6rem;
+    color: white;
+}
+
+h1,
+h2,
+p {
+
+    margin: 1.6rem 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section{
+    padding: 100px 0;
+}
+
+header {
+    height: 120vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+}
+
+.logo h1 {
+    font-size: 3.2rem;
+    color: #4CAF50;
+    margin: 0;
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav #menu {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+    transition: .5s ease-in-out;
+}
+
+.header-content {
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+}
+
+form {
+    margin: 2.4rem 0;
+}
+
+input {
+    font-size: 1.8rem;
+}
+
+input[type=text],
+input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input::placeholder {
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+.about{
+    background-color: aqua;
+}
+
+.about-left,
+.about-middle,
+.about-right {
+    flex-basis: 30%;
+    padding: 1.6rem;
+   
+}
+
+.btn {
+
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.about2 {
+    background-color:white;
+    color:black;
+    text-align: center;
+}
+
+
+
+.about2 .card {
+   
+    color: #222;
+    background-color: #DCDCDC;
+   
+    text-align: center;
+    height: 350px;
+    width: 350px;
+}
+
+.about2 .card:hover{
+    color: #19e720;
+    
+}
+
+.about2 .card .img1{
+    height:300px ;
+    width: 350px;
+
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.process{
+    background-color: #19e720;
+}
+.process .row {
+    justify-content: center;
+}
+
+
+
+
+
+
+.box1,
+.box2,
+.box3 {
+    padding: 1.8rem;
+    text-align: center;
+}
+
+
+
+
+
+.vds {
+    background-color: #222;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.dts{
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+}
+
+
+  
+  
+    
+ 
+ .inl{
+    display: inline;
+    flex-direction: column;
+ }
+
+
+
+
+
+
+
+.contact  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+}
+
+
+footer {
+    height: 80px;
+    background-color: #222;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+
+    .row{
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav #menu {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 32px;
+        color: royalblue;
+    }
+
+    nav ul {
+        background: whitesmoke;
+        display: none;
+    }
+
+    .showmenu {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+
+    nav ul li a {
+        color: #222;
+    }
+
+    .header-content{
+        width: 100%;
+      
+    }
+   
+    .about{
+        margin-top:60% ;
+    }
+
+   
+    .process-content{
+        margin-top: 20px;
+    }
+    
+
+    .testimony .dts{
+        margin:5.6rem 0;
+    }
+
+    .contact form input,
+    .contact textarea{
+        width: 100%;
+    }
+}

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>  website</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c5637dc904.js" crossorigin="anonymous"></script>
+
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: font-family: 'Poppins', sans-serif;
+
+	}
+	#navbar{
+		position:sticky;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		padding: .5rem 5rem;
+		box-shadow: 5px 5px 20px black rgba(0,0,0,.5);
+		background: black;
+	}
+	 .navbar .navbar-brand{
+		font-size: 25px;
+		font-weight: 800;
+		color:#29f700 !important;
+	}
+	.navbar .navbar-brand:hover{
+		color: white !important;
+	}
+
+	#navbarSupportedContent a{
+		color: white;
+		border-bottom: 2px solid transparent;
+	}
+	#navbarSupportedContent a:hover{
+		border-bottom: 2px solid #29f700 ;
+		
+
+	}
+	
+
+	#navbarSupportedContent button{
+		background:#29f700 ;
+		width: 5rem;
+		border-radius: 15px;
+		text-decoration: none;
+	}
+	section{
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	#home{
+		background: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0,.5)),url(https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+		background-size: cover;
+		background-position: center;
+		flex-direction: column;
+
+	}
+	#home h2{
+
+		font-size:100px;
+		color: white;
+		letter-spacing: 3px;
+		text-shadow:0px 1px 0px #CCC,
+		            0px 2px 0px #CCC,
+		            0px 3px 0px #CCC,
+		            0px 4px 0px #CCC,
+		            0px 5px 0px #CCC,
+		            0px 6px 0px #CCC;
+
+
+	}
+
+	h2 span{
+	color:red;
+	font-size: 80px;
+	text-transform: uppercase;
+}
+	#home p{
+		color: white;
+		font-size: 18px;
+
+	}
+	#home .input-group{
+		width:40%;
+		height: 45px;
+	}
+	.signin{
+		background:green !important;
+		color: white !important;
+		box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+		text-decoration: none;
+	}
+
+#About{
+	background: linear-gradient(to right, #ea1d6f,#eb466b 100%);
+
+
+}
+
+
+#About h1{
+	font-weight: 800;
+	font-size: 50px;
+	color: white;
+
+}
+#About p{
+	color: white;
+}
+
+#Products{
+	background: green;
+
+}
+#Products h1{
+	font-size: 50px;
+	font-weight: 800;
+	letter-spacing: 2px;
+
+}
+#Products img{
+	width: 300px;
+	height: 350px;
+}
+.nav-drop{
+	list-style-type: none;
+			display: none;
+}
+.nav-drop .nav-linkactive{
+	    display: block;
+			width:350px;
+			background-color:yellow;
+			color: red;
+			padding: 10px 0;
+			font-size: 1.2em;
+			text-decoration: none ;
+			text-align: center;
+			background: transparent;
+}
+.nav-drop nav-linkactive:hover{
+	background-color:blue;
+}
+ 
+
+
+
+.card{
+	width: 370px;
+	height: 450px;
+	background: #e5e5e5!important;
+	border: none !important;
+	box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3),
+	            inset 4px 4px 10px white;
+	            border-radius: 20px!important;
+	            overflow: hidden;
+	            justify-content:center ;
+	            align-items: center;
+	            margin: 20px ;
+	            transition: .3s;
+
+}
+.card:hover{
+	box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
+	            inset -10px -10px 10px white;
+	            transition: .3s;
+
+}
+#contact{
+	background:#F273E6;
+}
+
+#contact img{
+	height: 100%;
+
+}
+.box{
+	  width: 80% !important;
+	 
+
+}
+.from{
+	display: flex;
+	flex-direction: column;
+}
+#contact input{
+	margin: 10px 0px;
+
+}
+#contact textarea{
+	margin: 10px 0px;
+	
+}
+span{
+	color:red;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.icon{
+	font-size: 20px;
+	font-weight: 700px;
+	margin:30px;
+	color: darkred;
+	
+	
+}
+.icon a{
+	color: black;
+}
+
+ .icon a:hover{
+	color: white;
+}
+#home h1 span{
+	font-size: 100px;
+	color: red;
+}
+.icon p{
+	color: black;
+	display: inline;
+}
+.iconnavbar{
+	color: white;
+		font-size: 18px;
+		border-radius:10px solid;
+
+}
+.iconnavbar a{
+	padding:10px;
+	font-size: 20px;
+}
+.footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+.footer a{
+	color: white;
+}
+#RRR{
+	background-color: black;
+
+}
+h1{
+	text-align: center ;
+	color: white;
+	font-size: 40px;
+	background-color: black;
+}
+ .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+  
+
+
+
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:#FFC4C4;
+  color: black;
+  transform: rotateY(180deg);
+  font-family: sans-serif;
+  letter-spacing: 3px;
+}
+.flip-card-back h1{
+	color:#D61355;
+	font-size: 30px;
+	font-weight: 59px;
+}
+.iconr{
+	background-color: black;
+	font-size:50px;
+	font-weight:70px;
+	color: white;
+	margin-top: 8px;
+	
+}
+.iconr1{
+	background-color: black;
+	font-size:50px;
+	font-weight:70px;
+	color: white;
+	
+}
+#conpage{
+	background-color:#47B5FF;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height:30vh;
+}
+
+#conpage h2{
+	color:#D75281;
+}
+hr{
+	color: black;
+	border-radius:30px solid;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark"id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">makefoodie</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#About">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Products">products</a>
+          
+          	
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contact">contact</a>
+
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#RRR">Review</a>
+
+        </li>
+    </ul>
+
+    <div class="iconnavbar">
+    	
+    <a href="#"> <i class="fa-brands fa-searchengin"></i></a>
+    <a href="#"><i class="fa-solid fa-cart-shopping"> </i></a>
+ 
+</div>
+    <button class="btn p-2 my-lg-0 my-2">signin</button>
+
+        
+    </div>
+  
+</nav>
+<section id="home">
+	<h2 class="text-center"><span>make </span>foodie </h2>
+	<p>Brown sugar, flake salt, smoked paprika, black pepper, sumac berry, ground chipotle.</p>
+	<div class=" input-group m-4">
+		<input type="text"  class="form-control"name="Order number" placeholder="Order number">
+		<button class="btn signin">SEARCH</button>
+	</div>
+</section>
+
+<section id="About">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-12 p-lg-25 p-md-4 p-2 my-5" >
+        <img src="https://as2.ftcdn.net/v2/jpg/02/16/48/33/1000_F_216483364_5SuaNoeuO6MNCaV3BPnye87lcEJ4IlnD.jpg" class="img-fluid" width="450px" height="450px">
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 p-lg-25 p-md-4 p-2 my-5 ">
+      	<h1>ABOUT US</h1>
+      	<P>Indian food needs turmeric. Turmeric, a ground spice, has an earthy supporting flavour. Of all the spices used in Indian cooking, this one has huge health benefits, and an astounding yellow colour. Usually only a teaspoon is used to flavour and colour a dish for a family of four. If used for health purposes, make sure to include at least a dash of black pepper in your recipes. Turmeric is a great anti-inflammatory, but without the piperine from black pepper, its effects are diminished.There are more than 40 Indian spices. Many are obscure and used only in certain regions, like stone flower and garcinia. We've come up with this list of 24 essential spices that are used in just about all Indian food, encompassing several centuries-old culinary traditions from all over the broad subcontinent.
+
+Combining traditional spices to produce beautiful cooking is an almost spiritual act. Certainly exploring Indian food will greatly expand your cooking repertoire. Below are the the 24 top spices used in Indian cooking. Getting familiar with these spices is a great first step in your knowledge.</P>
+
+
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="Products">
+	<div class="container m-5">
+		<h1 class="text-center my-5">OUR PRODUCTS</h1>
+		<div class="row">
+
+			<div class="col-lg-4 col-md-6 col-12">
+				<div class="card" >
+  <img src="https://images.pexels.com/photos/892649/pexels-photo-892649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="350px" height="350px" class="card-img-top" >
+  <div class="card-body text-center">
+    <h5 class="card-title">FRUIT CAKE</h5>
+    
+    <a href="#" class="btn signin">Add Cart</a>
+  </div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+				<div class="card" >
+  <img src="https://images.pexels.com/photos/6158517/pexels-photo-6158517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="350px" height="350px" class="card-img-top" >
+  <div class="card-body text-center">
+    <h5 class="card-title"> VEG-RICE</h5>
+    
+    <a href="#" class="btn signin">Add Cart</a>
+ </div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+				<div class="card" >
+  <img src="https://images.pexels.com/photos/4669250/pexels-photo-4669250.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" width="350px" height="350px" class="card-img-top" >
+  <div class="card-body text-center">
+    <h5 class="card-title">CHICKEN LOLLIPOP</h5>
+    
+    <a href="#" class="btn signin">Add Cart</a>
+ </div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+				<div class="card" >
+  <img src="https://images.pexels.com/photos/3702403/pexels-photo-3702403.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" width="350px" height="350px" class="card-img-top" >
+ <div class="card-body text-center">
+    <h5 class="card-title">BURBER</h5>
+    
+    <a href="#" class="btn signin">Add Cart</a>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12">
+				<div class="card" >
+  <img src="https://images.pexels.com/photos/4669222/pexels-photo-4669222.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" width="350px" height="350px" class="card-img-top" >
+  <div class="card-body text-center">
+    <h5 class="card-title">NUTS ICE</h5>
+    
+    <a href="#" class="btn signin">Add Cart</a>
+  </div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-12">
+				<div class="card" >
+  <img src="https://images.pexels.com/photos/7190365/pexels-photo-7190365.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" width="350px" height="350px" class="card-img-top" >
+  <div class="card-body text-center">
+    <h5 class="card-title">MANGO MILKSHAKE</h5>
+    
+    <a href="#" class="btn signin">Add Cart</a>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<h1>CUSTOMER REVIEW</h1>
+
+<section id="RRR">
+	
+
+	<div class="flip-card ">
+  <div class="flip-card-inner">
+
+    <div class="flip-card-front">
+      <img src="https://images.pexels.com/photos/2403391/pexels-photo-2403391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  style="width:300px;height:300px;">
+      <div class="iconr">
+      <i class="fa-brands fa-square-facebook"></i>
+      </div>
+    </div>
+    <div class="flip-card-back">
+    	<h1>RAM </h1>
+      <p>“Oh, and the potato pancakes!”
+
+      “Coffee was fresh, the corned beef hash is amazing and homemade, even the toast was good! Oh, and the potato pancakes! Everything we ordered was fresh and delicious. Highly recommend! Definitely coming back.”</p>
+        <div class="iconr1">
+         <i class="fa-solid fa-heart"></i>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.pexels.com/photos/4255417/pexels-photo-4255417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:300px;height:300px;">
+      <div class="iconr">
+      <i class="fa-brands fa-twitter"></i>
+       </div>
+    </div>
+    <div class="flip-card-back">
+      <h1>GUNA & DEVI</h1>
+      <p>“Dinner was delicious. Like a good homestyle country savory breakfast (and Im from the south, thats saying a lot)… Enjoyed the whole experience and definitely recommend this place for a place to eat on the cape.” </p>
+      <div class="iconr1">
+      <i class="fa-solid fa-heart"></i>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.pexels.com/photos/6839642/pexels-photo-6839642.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"  style="width:300px;height:300px;">
+      <div class="iconr">
+      <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <h1>GURU</h1>
+      <p>“Very good service, good menu … not overly extensive. Food was very good quality all around. They know how to prepare home fries and their omelets are top-notch. Prices were reasonable.”</p>
+       <div class="iconr1">
+       <i class="fa-solid fa-heart"></i>
+       </div>
+    </div>
+
+  </div>
+</div>
+</section>
+<br>
+<section id="contact">
+	<div class="container box">
+		<div class="row">
+
+			<div class="col-lg-6 col-md-6 col-12">
+				<img src="https://images.pexels.com/photos/4589169/pexels-photo-4589169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="500px" height="500px" class="img-fluid">
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-12">
+				<h1>CONTACT US</h1>
+				<form class="mb-3">
+					<input type="text" class="form-control"name="Enter your name" placeholder="Enter your name">
+					<input type="text" class="form-control"name="Email id" placeholder="Email id">
+					<input type="number" class="form-control"name="Enter your number" placeholder="Enter your number">
+					<textarea class="form-control" placeholder="Enter your Feedback"  ></textarea>
+					<button class="btn signin btn-center" >submit</button>
+				</form>
+			</div>
+			
+<div class="col-lg-6 col-md-6 col-12">
+				<div class="icon">
+ 	<a href="#"><i class="fa-brands fa-square-facebook"></i></a> <span>make</span> FOODIE <P>FACEBOOK</P><br>
+ 	
+ 	<a href="#"><i class="fa-brands fa-twitter"></i></a> <span>make</span> FOODIE <P>TWITTER</P><br>
+ 	
+ 	<a href="#"><i class="fa-brands fa-instagram"></i></a> <span> make</span> FOODIE <P>INSTAGRAM</P>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br>
+<section id="conpage">
+	<div class="container">
+		<div class="row">
+			
+
+      <div class="col-4">
+      	<h2>YOUTUBE CHANEL</h2><hr>
+      	<br>
+	        <p>Sign up to our newsletter to get the latest food item news and subcribe our youtube chanel</p>
+		      <div class=" input-group">
+		          <input type="text"class="form-control"name="Email id" placeholder="Email id">
+		          <button class="btn signin">subcribe</button>
+	             </div>
+      </div>
+
+      <div class="col-4">
+				<h2>ADDRESS</h2><hr>
+      	<br>
+				<address>No:179/1, Ambattur Industrial Estate,  South phase, Ambattur, Chennai - 600058
+        Phone: +91-44-111333333 / 40000000
+        Email: care@makefoodie.com</address>
+      </div>
+
+      <div class="col-4">
+      	   <h2>OPENING HOURS</h2><hr>
+      	   <br>
+
+      	   <p>Monday - Sunday:</p>
+      	   <p>7 am - 11 pm</p>
+
+      </div>	   
+
+
+
+
+
+
+ </div>
+	</div>
+
+</section>
+<div class="footer">
+  <p><a href="">www.makefoodie.com</a>"Thank you & visit again"</p>
+</div>
+
+
+
+
+
+
+				
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
